@@ -1,0 +1,77 @@
+/* Link paleta de colores: https://colorhunt.co/palette/2121213232320d737714ffec */
+/* HEADER */
+
+:root{
+    --color0: #14FFEC;
+    --color1: #0D7377;
+    --color2: #323232;
+    --color3: #212121;
+}
+
+.navbar{
+    background-color: var(--color1);
+}
+
+.navbar button{
+    color: #fff;
+}
+
+.navbar span{
+    color: #fff;
+}
+
+.collapse{
+    display: flex;
+    justify-content: end;
+}
+
+.collapse a{
+    color: #fff;
+    padding: 10px;
+}
+
+.collapse a:hover{
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .collapse{
+        display: flex;
+        justify-content: start;
+        color: #fff;
+    }
+}
+
+/* BANNER */
+.banner{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color0);
+}
+
+.banner-img img{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color3);
+}
+
+@media (max-width: 768px) {
+
+    .banner{
+        justify-content: center;
+    }
+
+    .banner-img img{
+        display: none;
+    }
+}
